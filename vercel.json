@@ -1,0 +1,4 @@
+{
+  "builds": [{"src": "AttendanceCirtification.py", "use": "@vercel/python"}],
+  "env": {"STREAMLIT_SERVER_HEADLESS": "true"}
+}

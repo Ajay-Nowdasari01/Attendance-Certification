@@ -114,4 +114,3 @@ if day1_file and day2_file:
             )
 else:
     st.info("💡 Please upload both Day 1 and Day 2 CSV files via the sidebar panel to generate the report.")
-
