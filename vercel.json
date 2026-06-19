@@ -1,4 +1,15 @@
 {
-  "builds": [{"src": "AttendanceCirtification.py", "use": "@vercel/python"}],
-  "env": {"STREAMLIT_SERVER_HEADLESS": "true"}
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
 }
