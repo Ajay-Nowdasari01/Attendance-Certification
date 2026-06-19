@@ -1,18 +1,7 @@
-from flask import Flask
 import pandas as pd
-import sys
-sys.path.insert(0, '/tmp')
-
-app = Flask(__name__)
-
-@app.route('/', methods=['GET'])
-def hello():
-    return {"message": "ML Attendance System is running"}, 200
-
-@app.route('/api/process', methods=['POST'])
-def process_attendance():
-    # Your attendance logic here
-    return {"status": "processed"}, 200
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # ----------------------------------------------------
 # 1. DATA COLLECTION & PREPROCESSING (Real Raw Data)
